@@ -70,13 +70,17 @@ www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer
 ! Under a video, remove youtube playlists
 www.youtube.com##ytd-compact-playlist-renderer.ytd-item-section-renderer.style-scope
 
+! Remove the 3rd (Third) video from the first row. It is CONSISTENTLY a VERY terrible recommendation
+! Do this before removing any videos which are low view count
+##ytd-rich-grid-row.ytd-rich-grid-renderer.style-scope:nth-of-type(1) ytd-rich-item-renderer:nth-of-type(3)
+
 ! Under a video, remove videos which have been seen by less than a thousand people...
 ! Yes, this is 99.99% a video not remotely related to what I am interested in
 ! If its top 12 videos it shows up in the end screen. Which it is USUALLY #2 or #3 so it will show up
 ! OLD www.youtube.com##ytd-compact-video-renderer:has(span.ytd-video-meta-block:has-text(/^[1-9]?[0-9]{1,2}(\,[0-9]{3})* views$/))
 www.youtube.com##ytd-rich-item-renderer:has(span.ytd-video-meta-block:has-text(/^[1-9]?[0-9]{1,2}(\,[0-9]{3})* views$/))
 
-! 2024-05-02 https://www.youtube.com
+! No idea why I added these, but I clicked to remove them at some point
 www.youtube.com##.ytd-rich-shelf-renderer.style-scope
 www.youtube.com##.ytd-statement-banner-renderer.style-scope
 www.youtube.com##.ytd-rich-section-renderer.style-scope
