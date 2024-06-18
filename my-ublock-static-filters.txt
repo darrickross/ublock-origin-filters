@@ -1,0 +1,53 @@
+! ==================================================
+! Remove things from all parts of youtube
+! ==================================================
+
+! Remove Left Bar Menus I don't care about
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Downloads$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your videos$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your movies & TV$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^YouTube Music$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your clips$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your channel$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Liked Videos$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Send feedback$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Help$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Report history$/i))
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has(yt-formatted-string:has-text(/^More from YouTube$/i))
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has(yt-formatted-string:has-text(/^Explore$/i))
+
+! Remove bottom left copyright/youtube links
+www.youtube.com###guide-links-secondary
+www.youtube.com###guide-links-primary
+www.youtube.com###copyright
+
+! Remove the voice search button
+www.youtube.com###voice-search-button
+
+! Remove the YouTube create button
+www.youtube.com##.style-default.ytd-topbar-menu-button-renderer.style-scope
+
+! ==================================================
+! Remove things under a currently playing youtube video
+! ==================================================
+
+! Under a video, remove tags above recommended video/queue
+www.youtube.com###content > .yt-related-chip-cloud-renderer.style-scope
+
+! Under a video, remove recommended Shorts
+www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer
+
+! Under a video, remove youtube playlists
+www.youtube.com##ytd-compact-playlist-renderer.ytd-item-section-renderer.style-scope
+
+! Under a video, remove videos which have been seen by less than a thousand people...
+! Yes, this is 99.99% a video not remotely related to what I am interested in
+! If its top 12 videos it shows up in the end screen. Which it is USUALLY #2 or #3 so it will show up
+! OLD www.youtube.com##ytd-compact-video-renderer:has(span.ytd-video-meta-block:has-text(/^[1-9]?[0-9]{1,2}(\,[0-9]{3})* views$/))
+www.youtube.com##ytd-rich-item-renderer:has(span.ytd-video-meta-block:has-text(/^[1-9]?[0-9]{1,2}(\,[0-9]{3})* views$/))
+
+! 2024-05-02 https://www.youtube.com
+www.youtube.com##.ytd-rich-shelf-renderer.style-scope
+www.youtube.com##.ytd-statement-banner-renderer.style-scope
+www.youtube.com##.ytd-rich-section-renderer.style-scope
