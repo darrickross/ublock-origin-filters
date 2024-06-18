@@ -33,6 +33,17 @@ www.youtube.com###voice-search-button
 ! Remove the YouTube create button
 www.youtube.com##.style-default.ytd-topbar-menu-button-renderer.style-scope
 
+
+! ==================================================
+! Remove from main/search pages
+! ==================================================
+
+! Removes Mixes from the Main Page
+youtube.com##ytd-rich-item-renderer:has(#video-title-link[title*="Mix"][href$="start_radio=1"])
+
+! Removes Mixes from search results
+youtube.com##ytd-radio-renderer
+
 ! ==================================================
 ! Remove things under a currently playing youtube video
 ! ==================================================
