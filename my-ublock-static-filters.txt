@@ -17,6 +17,11 @@ www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Rep
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has(yt-formatted-string:has-text(/^More from YouTube$/i))
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has(yt-formatted-string:has-text(/^Explore$/i))
 
+! Remove Left Bar Menu buttons from 'tablet' mode or collapsed
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Shorts$/i))
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^YouTube Music$/i))
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Downloads$/i))
+
 ! Remove bottom left copyright/youtube links
 www.youtube.com###guide-links-secondary
 www.youtube.com###guide-links-primary
