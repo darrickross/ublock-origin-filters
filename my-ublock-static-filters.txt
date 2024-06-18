@@ -48,6 +48,13 @@ youtube.com##ytd-radio-renderer
 www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
 ! ==================================================
+! Search
+! ==================================================
+
+! Remove 
+www.youtube.com###header > .ytd-rich-grid-renderer.style-scope
+
+! ==================================================
 ! Remove things under a currently playing youtube video
 ! ==================================================
 
