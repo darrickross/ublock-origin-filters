@@ -51,7 +51,7 @@ www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > 
 ! Search
 ! ==================================================
 
-! Remove 
+! Remove
 www.youtube.com###header > .ytd-rich-grid-renderer.style-scope
 
 ! ==================================================
