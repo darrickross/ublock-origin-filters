@@ -44,6 +44,9 @@ youtube.com##ytd-rich-item-renderer:has(#video-title-link[title*="Mix"][href$="s
 ! Removes Mixes from search results
 youtube.com##ytd-radio-renderer
 
+! Remove Shorts section from list
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
+
 ! ==================================================
 ! Remove things under a currently playing youtube video
 ! ==================================================
