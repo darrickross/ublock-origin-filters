@@ -7,6 +7,7 @@ www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Sho
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Downloads$/i))
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your videos$/i))
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your movies & TV$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your podcasts$/i))
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^YouTube Music$/i))
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your clips$/i))
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your channel$/i))
