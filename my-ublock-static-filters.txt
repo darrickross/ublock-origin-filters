@@ -98,3 +98,6 @@ youtube.com###video-title:has-text(/[\u0900-\u097F]+/i):upward(5)
 youtube.com###video-title:has-text(/[\u0980-\u09FF]+/i):upward(5)
 ! Filter for Tamil script
 youtube.com###video-title:has-text(/[\u0B80-\u0BFF]+/i):upward(5)
+
+! DnD Beyond - Cookie banner
+www.dndbeyond.com###lanyard_root
