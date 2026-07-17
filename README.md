@@ -18,10 +18,17 @@ Subscribe to this list once per device — uBlock Origin will periodically re-ch
 
 You should then see the URL listed under **Custom**, just above **Import...**. Repeat on each device/browser profile you want kept in sync.
 
-> **Note:** This only works because the repo is public — `raw.githubusercontent.com` can't serve private repo content to uBlock Origin.
->
-> **⚠️ De-duplicate with "My filters" first.** If you previously pasted these same rules directly into uBlock Origin's built-in **My filters** tab, remove them from there before (or right after) subscribing to this list — otherwise every matching rule exists twice: once locally, once from this subscription.
->
+> [!IMPORTANT]
+> This only works because the repo is public — `raw.githubusercontent.com` can't serve private repo content to uBlock Origin.
+
+<!-- -->
+
+> [!WARNING]
+> De-duplicate with **"My filters"** first. If you previously pasted these same rules directly into uBlock Origin's built-in **My filters** tab, remove them from there before (or right after) subscribing to this list — otherwise every matching rule exists twice: once locally, once from this subscription.
+
+<!-- -->
+
+> [!TIP]
 > If the popup shows this list as **"X used out of Y"** and X seems lower than expected for the page you're on, check whether the missing rules are duplicated in **My filters**. uBlock Origin still applies the effect either way, but the count won't reflect this list's rules as the ones actually in use.
 
 ## Updating filters
