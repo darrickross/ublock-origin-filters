@@ -99,5 +99,10 @@ youtube.com###video-title:has-text(/[\u0980-\u09FF]+/i):upward(5)
 ! Filter for Tamil script
 youtube.com###video-title:has-text(/[\u0B80-\u0BFF]+/i):upward(5)
 
+! Right hand side Chat window
+www.youtube.com###chatframe
+www.youtube.com###chat-container
+www.youtube.com###panels-full-bleed-container
+
 ! DnD Beyond - Cookie banner
 www.dndbeyond.com###lanyard_root
