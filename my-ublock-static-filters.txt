@@ -1,8 +1,12 @@
 ! ==================================================
-! Remove things from all parts of youtube
+! www.youtube.com
 ! ==================================================
 
-! Remove Left Bar Menus I don't care about
+! --------------------------------------------------
+! Sidebar / navigation
+! --------------------------------------------------
+
+! Left bar menu entries I don't care about
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Downloads$/i))
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Your videos$/i))
@@ -18,58 +22,44 @@ www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Rep
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has(yt-formatted-string:has-text(/^More from YouTube$/i))
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has(yt-formatted-string:has-text(/^Explore$/i))
 
-! Remove Left Bar Menu buttons from 'tablet' mode or collapsed
+! Left bar menu buttons from 'tablet' mode or collapsed
 www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Shorts$/i))
 www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^YouTube Music$/i))
 www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Downloads$/i))
 
-! Remove bottom left copyright/youtube links
+! Bottom left copyright/youtube links
 www.youtube.com###guide-links-secondary
 www.youtube.com###guide-links-primary
 www.youtube.com###copyright
 
-! Remove the voice search button
+! --------------------------------------------------
+! Top bar
+! --------------------------------------------------
+
+! Voice search button
 www.youtube.com###voice-search-button
 
-! Remove the YouTube create button
+! Create button
 www.youtube.com##.style-default.ytd-topbar-menu-button-renderer.style-scope
 
-
-! ==================================================
-! Remove from main/search pages
-! ==================================================
+! --------------------------------------------------
+! Home feed / search results
+! --------------------------------------------------
 
 ! Removes Mixes from the Main Page
-youtube.com##ytd-rich-item-renderer:has(#video-title-link[title*="Mix"][href$="start_radio=1"])
+www.youtube.com##ytd-rich-item-renderer:has(#video-title-link[title*="Mix"][href$="start_radio=1"])
 
 ! Removes Mixes from search results
-youtube.com##ytd-radio-renderer
+www.youtube.com##ytd-radio-renderer
 
 ! Removes Mixes from the right side panel
-youtube.com##ytd-compact-radio-renderer
+www.youtube.com##ytd-compact-radio-renderer
 
 ! Remove Shorts section from list
 www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
-! ==================================================
-! Search
-! ==================================================
-
 ! Remove
 ! www.youtube.com###header > .ytd-rich-grid-renderer.style-scope
-
-! ==================================================
-! Remove things under a currently playing youtube video
-! ==================================================
-
-! Under a video, remove tags above recommended video/queue
-www.youtube.com###content > .yt-related-chip-cloud-renderer.style-scope
-
-! Under a video, remove recommended Shorts
-www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer
-
-! Under a video, remove youtube playlists
-www.youtube.com##ytd-compact-playlist-renderer.ytd-item-section-renderer.style-scope
 
 ! Remove live videos
 www.youtube.com##ytd-rich-item-renderer:has(span.ytd-video-meta-block:has-text(/^.* watching$/))
@@ -85,7 +75,6 @@ www.youtube.com##ytd-rich-item-renderer:has(span.ytd-video-meta-block:has-text(/
 ! www.youtube.com##ytd-rich-item-renderer:has(span.ytd-video-meta-block:has-text(/^[1-9]?[0-9]{1,2}(\,[0-9]{3})* views$/))
 www.youtube.com##ytd-rich-item-renderer:not([page-subtype="subscriptions"]):has(span.ytd-video-meta-block:has-text(/^[1-9]?[0-9]{1,2}(\,[0-9]{3})* views$/))
 
-
 ! No idea why I added these, but I clicked to remove them at some point
 www.youtube.com##.ytd-rich-shelf-renderer.style-scope
 www.youtube.com##.ytd-statement-banner-renderer.style-scope
@@ -93,16 +82,34 @@ www.youtube.com##.ytd-rich-section-renderer.style-scope
 
 ! Youtube has started to recommend random foreign language videos
 ! Filter for Hindi (Devanagari script)
-youtube.com###video-title:has-text(/[\u0900-\u097F]+/i):upward(5)
+www.youtube.com###video-title:has-text(/[\u0900-\u097F]+/i):upward(5)
 ! Filter for Bengali script
-youtube.com###video-title:has-text(/[\u0980-\u09FF]+/i):upward(5)
+www.youtube.com###video-title:has-text(/[\u0980-\u09FF]+/i):upward(5)
 ! Filter for Tamil script
-youtube.com###video-title:has-text(/[\u0B80-\u0BFF]+/i):upward(5)
+www.youtube.com###video-title:has-text(/[\u0B80-\u0BFF]+/i):upward(5)
+
+! --------------------------------------------------
+! Video watch page
+! --------------------------------------------------
+
+! Under a video, remove tags above recommended video/queue
+www.youtube.com###content > .yt-related-chip-cloud-renderer.style-scope
+
+! Under a video, remove recommended Shorts
+www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer
+
+! Under a video, remove youtube playlists
+www.youtube.com##ytd-compact-playlist-renderer.ytd-item-section-renderer.style-scope
 
 ! Right hand side Chat window
 www.youtube.com###chatframe
 www.youtube.com###chat-container
 www.youtube.com###panels-full-bleed-container
 
-! DnD Beyond - Cookie banner
+
+! ==================================================
+! www.dndbeyond.com
+! ==================================================
+
+! Cookie banner
 www.dndbeyond.com###lanyard_root
