@@ -55,6 +55,10 @@ www.youtube.com##ytd-radio-renderer
 ! Removes Mixes from the right side panel
 www.youtube.com##ytd-compact-radio-renderer
 
+! Remove shorts from search results
+www.youtube.com##.ytGridShelfViewModelHostHasBottomButton.grid-shelf-with-top-margin.ytd-item-section-renderer.ytGridShelfViewModelHost
+www.youtube.com##grid-shelf-view-model.grid-shelf-with-top-margin.ytd-item-section-renderer.ytGridShelfViewModelHost
+
 ! Remove Shorts section from list
 www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
